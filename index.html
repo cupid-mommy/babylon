@@ -1,69 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>App Features</title>
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url('https://i.imgur.com/0lDvsxq.jpeg');
-    background-size: cover;  /* 背景圖片覆蓋螢幕，保持比例 */
-    background-position: center;
-    background-repeat: no-repeat;  /* 防止背景圖片重複 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;  /* 確保背景圖片至少覆蓋整個螢幕高度 */
-    color: black;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    cursor: pointer;  /* 背景可點擊 */
-}
-
-footer {
-    position: absolute;
-    bottom: 10px;
-    font-size: 0.8em;
-    color: black;
-    width: 100%;
-    text-align: center;
-}
-
-h3 {
-    margin-top: 195px;
-    color: black;
-}
-
-/* 媒體查詢，針對小螢幕裝置 */
-@media (max-width: 768px) {
-    body {
-        background-size: contain;  /* 在小螢幕上完整顯示背景圖片 */
-    }
-
-    h3 {
-        margin-top: 150px;  /* 調整標題位置 */
-    }
-}
-
-/* 針對更小的裝置，如手機 */
-@media (max-width: 480px) {
-    h3 {
-        font-size: 1.2em;  /* 調整標題字體大小 */
-        margin-top: 100px;
-    }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Features</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.imgur.com/0lDvsxq.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            cursor: pointer; /* Change cursor to pointer for clickable background */
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.8em;
+            color: black; /* Footer text color */
+            width: 100%;
+            text-align: center; /* Center footer text */
+        }
+                h2 {
+            margin-top: 180px; /* 調整垂直位置 */
+            color: black; /* 讓H1的文字在背景圖片上清晰可見 */
+        }
+    </style>
 </head>
 <body onclick="window.location.href='https://link.babylonai.app/site';">
 
-<div>
-    <h3>the amazing features of our app</h3>
-</div>
+    <div>
+        <h2>the amazing features of our app</h1>
+    </div>
 
-<footer>
-    &copy; 2024 majorbros. All rights reserved.
-</footer>
+    <footer>
+        &copy; 2024 majorbros. All rights reserved.
+    </footer>
+
 </body>
 </html>
