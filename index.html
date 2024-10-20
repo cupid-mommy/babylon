@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Features</title>
+    <title>Centered Image with Flexbox</title>
     <style>
+        /* Reset一些預設樣式 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
+        /* 使用Flexbox讓圖片居中 */
         body {
-            background-image: url('https://i.imgur.com/0lDvsxq.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            cursor: pointer; /* Change cursor to pointer for clickable background */
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            background-color: #f4f4f4; /* 背景色，您可以替換成需要的顏色 */
+        }
+
+        /* 限制圖片的寬高以保持響應式 */
+        img {
+            max-width: 40%;
+            max-height:40%;
+            
         }
         footer {
             position: absolute;
@@ -30,37 +34,17 @@
             width: 100%;
             text-align: center; /* Center footer text */
         }
-        h2 {
-            margin-top: 250px; /* 調整垂直位置 */
-        }
-        @media (max-width: 920px) {
-            body {
-                background-size: contain; /* 小螢幕時，背景圖片顯示完整 */
-                background-repeat: no-repeat;
-                height: 100vh;
-            }
-        }
-        @media (max-width: 768px) {
-            body {
-                background-size: contain; /* 小螢幕時，背景圖片顯示完整 */
-                background-repeat: no-repeat;
-                height: 100vh;
-            }
-        }
-        @media (max-width: 540) {
-            body {
-                background-size: contain; /* 小螢幕時，背景圖片顯示完整 */
-                background-repeat: no-repeat;
-                height: 100vh;
-            }
-        }
+
+
     </style>
 </head>
-<body onclick="window.location.href='https://link.babylonai.app/site';">
+<body>
 
-    <div>
-        <h2>the amazing features of our app</h2>
-    </div>
+    <!-- 插入圖片 -->
+    
+
+            <img src="https://i.imgur.com/JJkFaZu.png?1" alt="Sample Image">
+
 
     <footer>
         &copy; 2024 Your Company Name. All rights reserved.
