@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Features</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+        body {
             background-image: url('https://i.imgur.com/0lDvsxq.jpeg');
             background-size: cover;
             background-repeat: no-repeat;
@@ -17,8 +19,6 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            color: black;
-            font-family: Arial, sans-serif;
             text-align: center;
             cursor: pointer; /* Change cursor to pointer for clickable background */
         }
@@ -32,6 +32,12 @@
         }
         h2 {
             margin-top: 250px; /* 調整垂直位置 */
+        }
+        @media (max-width: 768px) {
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
